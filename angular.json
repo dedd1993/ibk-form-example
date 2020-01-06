@@ -25,12 +25,19 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@titan/titan-styles-commons/src/8.assets/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/@titan/titan-styles-commons/src/8.assets/icon/js/svgxuse.js"
+            ]
           },
           "configurations": {
             "production": {
