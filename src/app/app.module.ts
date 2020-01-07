@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import { SharedModule } from 'src/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 import { AppComponent } from './app.component';
 import { FormExampleComponent } from './form-example/form-example.component';
 
