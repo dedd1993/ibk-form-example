@@ -2,36 +2,43 @@
   <ibk-input-alphanumeric value=""
                           input-label="DNI"
                           input-status="default"
-                          error-text="Error en el input"></ibk-input-alphanumeric>
+                          error-text="Error en el input"
+                          class="mb-16"></ibk-input-alphanumeric>
 
   <ibk-input-alphanumeric value=""
                           input-label="Email"
                           input-status="default"
-                          error-text="Error en el input"></ibk-input-alphanumeric>
+                          error-text="Error en el input"
+                          class="mb-16"></ibk-input-alphanumeric>
 
   <ibk-input-password value=""
                       input-label="Password"
                       input-status="default"
                       tooltip-text="Uso de mayúsculas activo"
                       has-tooltip="false"
-                      error-text="Error en el input"></ibk-input-password>
+                      error-text="Error en el input"
+                      class="mb-32"></ibk-input-password>
 
   <ibk-custom-select id="test"
                      default-value="1"
                      placeholder-text="Role"
                      is-disabled="false"
-                     [options]="roleOptions"></ibk-custom-select>
+                     [options]="roleOptions"
+                     class="mb-32"></ibk-custom-select>
 
   <ibk-checkbox is-disabled="false"
                 label="Remenber me"
-                is-checked="false"></ibk-checkbox>
+                is-checked="false"
+                class="mb-16"></ibk-checkbox>
 
+  <div class="button-wrapper">
+    <ibk-button type="primary"
+                state="default"
+                disabled
+                class="mb-8">LOGIN</ibk-button>
 
-  <ibk-button type="primary"
-              state="default"
-              disabled>LOGIN</ibk-button>
-
-  <ibk-button type="secondary"
-              state="default">RESET</ibk-button>
+    <ibk-button type="secondary"
+                state="default">RESET</ibk-button>
+  </div>
 
 </form>

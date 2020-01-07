@@ -2,8 +2,31 @@
   display: block;
   margin: 48px 56px;
 
-  form > * {
-    display: block;
-    margin-bottom: 16px;
+  form {
+    & > * {
+      display: block;
+    }
+
+    .button-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mt-16 {
+  margin-top: 16px;
 }
