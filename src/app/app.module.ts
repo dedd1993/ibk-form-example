@@ -1,16 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+import { SharedModule } from 'src/shared/shared.module';
 import { AppComponent } from './app.component';
+import { FormExampleComponent } from './form-example/form-example.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormExampleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SharedModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
