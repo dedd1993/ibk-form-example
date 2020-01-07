@@ -1,9 +1,12 @@
+
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <ibk-input-alphanumeric value=""
+  <app-input label='DNI' formControlName="documentNumber"></app-input>
+
+  <!-- <ibk-input-alphanumeric value=""
                           input-label="DNI"
                           input-status="default"
                           error-text="Error en el input"
-                          class="mb-16"></ibk-input-alphanumeric>
+                          class="mb-16"></ibk-input-alphanumeric> -->
 
   <ibk-input-alphanumeric value=""
                           input-label="Email"
@@ -38,7 +41,8 @@
                 class="mb-8">LOGIN</ibk-button>
 
     <ibk-button type="secondary"
-                state="default">RESET</ibk-button>
+                state="default"
+                (click)="onReset()">RESET</ibk-button>
   </div>
 
 </form>

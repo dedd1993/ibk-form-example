@@ -28,7 +28,7 @@ export class FormExampleComponent {
 
   private initFormBuilder(): FormGroup {
     return new FormGroup({
-      documentNumber: new FormControl({ value: '12345679', disabled: false }, [ ]),
+      documentNumber: new FormControl({ value: '12345679', disabled: true }, [ Validators.required ]),
       email: new FormControl({ value: null, disabled: false }, [ Validators.required, Validators.email ]),
       password: new FormControl({ value: null, disabled: false }, [ Validators.required ]),
       role: new FormControl({ value: null, disabled: false }, [ Validators.required ]),

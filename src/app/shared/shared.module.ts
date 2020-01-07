@@ -1,6 +1,10 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import {
+  InputComponent
+} from './components';
 
 import {
   OnlyObjectNameDirective,
@@ -11,7 +15,9 @@ import {
   OnlyAddressDirective
 } from './directives';
 
-const COMPONENTS = [];
+const COMPONENTS = [
+  InputComponent
+];
 
 const DIRECTIVES = [
   OnlyAlphanumericDirective,
@@ -46,6 +52,7 @@ const UTILS = [];
   entryComponents: [
     ...UTILS
   ],
-  providers: []
+  providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SharedModule { }
